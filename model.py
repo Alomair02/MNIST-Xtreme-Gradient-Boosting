@@ -25,7 +25,7 @@ def train_xgboost(X, y, n_splits, num_rounds):
         'num_class': len(np.unique(y)),
         'eval_metric': 'mlogloss',
         'tree_method': 'hist',
-        'device': 'gpu' if torch.cuda.is_available() else 'cpu',
+        'device': 'cuda' if torch.cuda.is_available() else 'cpu',
         'n_estimators': num_rounds,
     }
     fold_index = 0
