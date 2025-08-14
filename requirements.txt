@@ -1,5 +1,5 @@
 numpy
 pandas
 scikit-learn
-xgboost
+py-xgboost
 pytorch
